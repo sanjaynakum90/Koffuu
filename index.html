@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koffuu - Contact Us | Premium Coffee Shop & Café</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl navbar-light shadow-sm fixed-top">
+        <div class="container">
+            <a href="/" class="navbar-brand  align-items-center me-2">
+                <img src="img/logo-dark.png" alt="Logo" height="34" class="d-none d-md-block">
+                <img src="img/logo-sm.png" alt="Logo" height="34" class="d-md-none d-block">
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <div class="d-flex d-xl-none align-items-center">
+                <a href="./cart.html" class="text-decoration-none position-relative me-4">
+                    <i class="ri-shopping-cart-2-line fs-4 text-dark"></i>
+                    <span
+                        class="position-absolute top-0 translate-middle mt-1 rounded-circle bg-danger text-white order-count">0+</span>
+                </a>
+                <button class="navbar-toggler p-1 fs-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="ri-menu-3-line fs-3"></i>
+                </button>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="collapse navbar-collapse navbar-custom" id="navbarAnimated">
+                <ul class="navbar-nav mx-auto" id="navbarNav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservation">Book a Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+
+                <div class="d-none d-xl-flex align-items-center ms-auto" id="navbarSupportedContent">
+                    <a href="./cart.html"
+                        class="text-decoration-none position-relative link-body-emphasis fw-semibold me-3">
+                        <i class="ri-shopping-cart-2-line fs-3"></i>
+                        <span
+                            class="position-absolute top-0 translate-middle mt-1 rounded-circle bg-danger text-white order-count">0+</span>
+                    </a>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalToggle">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero-section -->
+    <section class="hero-section-primary vh-100 position-relative d-flex justify-content-center" id="home">
+        <div id="carouselExample" class="carousel slide carousel-fade position-absolute h-100 w-100 z-0"
+            data-bs-ride="carousel" data-bs-touch="false">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                    <img src="img/main-1.jpg" class="d-block h-100 w-100 object-fit-cover" alt="...">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="img/main-2.jpg" class="d-block h-100 w-100 object-fit-cover" alt="...">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="img/main-3.jpg" class="d-block h-100 w-100 object-fit-cover" alt="...">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="img/main-4.jpg" class="d-block h-100 w-100 object-fit-cover" alt="...">
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <div
+            class="container d-flex justify-content-lg-end justify-content-center align-items-center z-2 text-lg-start text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="section-title mb-0 mt-5 text-secondary fs-70">Brewed Moments, </h1>
+                    <h1 class="section-title text-secondary fs-70">Shared Stories</h1>
+                    <p class="mt-3 text-light">We don’t just serve drinks — we serve experiences, one cup at a time.</p>
+                    <a href="#categories" class="btn btn-primary mt-3"><i class="ri-cup-line"></i> View More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- categories-section overview -->
+    <section class="section-lg section-bg-light overflow-hidden" id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div
+                        class="d-flex flex-wrap justify-content-around align-items-center gap-3 text-center fw-semibold">
+                        <div>
+                            <img src="img/hot-coffee.png" alt="coffee" height="70">
+                            <h5 class="text-primary mt-2">Hot Coffee</h5>
+                        </div>
+                        <div>
+                            <img src="img/cold-coffee.png" alt="cold-coffee" height="70">
+                            <h5 class="text-primary mt-2">Cold Coffee</h5>
+                        </div>
+                        <div>
+                            <img src="img/cup-coffee.png" alt="cup-coffee" height="70">
+                            <h5 class="text-primary mt-2">Cup Coffee</h5>
+                        </div>
+                        <div>
+                            <img src="img/dessert.png" alt="desert" height="70">
+                            <h5 class="text-primary mt-2">Dessert</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About US-section -->
+    <section class="section-lg overflow-hidden" id="about">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <h2 class="border-start border-primary border-5 text-gradiant fw-bold ps-2 mt-lg-0 mt-5">Our Story
+                    </h2>
+                    <p class="section-des my-3">At Café Amour, our story begins with a simple love for coffee — not just
+                        as a drink, but as a ritual, a reason to gather, and a spark for conversation. What started as a
+                        tiny corner café has grown into a cozy space where community thrives over freshly brewed
+                        espresso, flaky pastries, and heartfelt moments. We believe every cup tells a story — of
+                        passion, craft, and connection. Whether you're here for your morning pick-me-up or an unhurried
+                        afternoon escape, Café Amour is where warmth lives in every sip.
+                    </p>
+                    <div class="d-flex flex-wrap mb-3">
+                        <span class="badge me-2 mb-2">100% Arabica Beans</span>
+                        <span class="badge me-2 mb-2">Cozy Ambience</span>
+                        <span class="badge me-2 mb-2">Artisan Pastries</span>
+                        <span class="badge me-2 mb-2">Friendly Baristas</span>
+                    </div>
+                    <button class="btn btn-sm btn-outline">Explore Our Story <i class="ri-leaf-line"></i></button>
+                </div>
+
+                <div class="col-lg-5 offset-lg-1 order-1 order-lg-2 position-relative mb-4">
+                    <img src="img/about-img-3.jpg" alt="" class="img-fluid aboutus-img img-2 ">
+                    <img src="img/about-img-1.jpg" alt="" class="img-fluid aboutus-img img-1">
+                    <img src="img/about-img-2.jpg" alt="" class="img-fluid aboutus-img  img-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories-section -->
+    <section class="section-lg section-bg-light overflow-hidden" id="categories">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    <h1 class="overflow-hidden fw-bold text-gradiant">Top Categories</h1>
+                    <p class="section-des">A delicious lineup of drinks, bites, and bakery favorites.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-sm-12 col-10">
+                    <div class="swiper category-swiper" id="catSlider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="category-card">
+                                    <div class="category-img position-relative overflow-hidden">
+                                        <img src="img/beverages.jpg" alt="Beverages" class="img-fluid">
+                                        <div class="overlay"></div>
+                                        <div class="img-text text-center">
+                                            <h3 class="text-light">Beverages</h3>
+                                            <a href="./menu.html" class="text-decoration-none text-white">Explore Menu<i
+                                                    class="ri-arrow-right-line"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category-card">
+                                    <div class="category-img position-relative overflow-hidden">
+                                        <img src="img/bakery.jpg" alt="Bakery" class="img-fluid">
+                                        <div class="overlay"></div>
+                                        <div class="img-text text-center">
+                                            <h3 class="text-light">Bakery</h3>
+                                            <a href="./menu.html" class="text-decoration-none text-white">Explore Menu<i
+                                                    class="ri-arrow-right-line"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category-card">
+                                    <div class="category-img position-relative overflow-hidden">
+                                        <img src="img/desserts.jpg" alt="Dessert" class="img-fluid">
+                                        <div class="overlay"></div>
+                                        <div class="img-text text-center">
+                                            <h3 class="text-light">Desserts</h3>
+                                            <a href="./menu.html" class="text-decoration-none text-white">Explore Menu<i
+                                                    class="ri-arrow-right-line"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category-card">
+                                    <div class="category-img position-relative overflow-hidden">
+                                        <img src="img/snacks.jpg" alt="Snacks & Light Bites" class="img-fluid">
+                                        <div class="overlay"></div>
+                                        <div class="img-text text-center">
+                                            <h3 class="text-light">Snacks & Light Bites</h3>
+                                            <a href="./menu.html" class="text-decoration-none text-white">Explore Menu<i
+                                                    class="ri-arrow-right-line"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category-card">
+                                    <div class="category-img position-relative overflow-hidden">
+                                        <img src="img/special.jpg" alt="Specials" class="img-fluid">
+                                        <div class="overlay"></div>
+                                        <div class="img-text text-center">
+                                            <h3 class="text-light">Our Specials</h3>
+                                            <a href="./menu.html" class="text-decoration-none text-white">Explore Menu<i
+                                                    class="ri-arrow-right-line"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Swiper Pagination styled with Bootstrap -->
+                        <div class="swiper-pagination d-flex justify-content-center align-items-center gap-2 mt-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row item-overview mb-3">
+                <div class="col-12 text-center">
+                    <h1 class="fw-bold text-gradiant position-relative">Signature Coffee Selection</h1>
+                    <p class="section-des">Discover our best-selling coffee blends, chosen for their rich flavor and
+                        artisanal quality.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-sm-6 col-10">
+                    <div class="card item-card overflow-hidden border-0 shadow rounded-4 mb-4 h-100">
+                        <div class="position-relative">
+                            <img src="img/img-1.jpg" class="img-fluid rounded-top" alt="Classic Espresso">
+                            <!-- Star Ratings -->
+                            <div class="position-absolute top-0 start-0 m-2 text-warning z-2">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-line"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+
+                            <!-- Add Icon -->
+                            <div
+                                class="add-icon text-decoration-none text-white position-absolute end-0 bottom-0 lh-1 z-2">
+                                <i class="ri-add-circle-fill fs-1"></i>
+                            </div>
+                        </div>
+
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-semibold">Classic Espresso</h5>
+                                <p class="text-muted small mb-1">Hot Beverages</p>
+                                <p class="card-text  small">Bold and intense shot brewed from freshly ground beans.</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-amount fw-bold mb-0">$30</h5>
+                                <a href="./cart.html" class="btn btn-sm btn-primary rounded-pill px-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-10">
+                    <div class="card item-card overflow-hidden border-0 shadow rounded-4 mb-4 h-100">
+                        <!-- Card Image with Overlays -->
+                        <div class="position-relative">
+                            <img src="img/img-2.jpg" class="img-fluid rounded-top" alt="Velvet Latte">
+                            <!-- Star Ratings -->
+                            <div class="position-absolute top-0 start-0 m-2 text-warning z-2">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+
+                            <!-- Add Icon -->
+                            <div
+                                class="add-icon text-decoration-none text-white position-absolute end-0 bottom-0 lh-1 z-2">
+                                <i class="ri-add-circle-fill fs-1"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-semibold">Velvet Latte</h5>
+                                <p class="text-muted small mb-1">Non-Caffeinated</p>
+                                <p class="card-text small">Silky steamed milk blended with smooth espresso.</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-amount fw-bold mb-0">$45</h5>
+                                <a href="./cart.html" class="btn btn-sm btn-primary rounded-pill px-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-10">
+                    <div class="card item-card overflow-hidden border-0 shadow rounded-4 mb-4 h-100">
+                        <!-- Image with Add Icon & Ratings -->
+                        <div class="position-relative">
+                            <img src="img/img-3.jpg" class="img-fluid rounded-top" alt="Classic Croissant">
+                            <!-- Star Ratings -->
+                            <div class="position-absolute top-0 start-0 m-2 text-warning z-2">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-line"></i>
+                            </div>
+
+                            <!-- Add Icon -->
+                            <div
+                                class="add-icon text-decoration-none text-white position-absolute end-0 bottom-0 lh-1 z-2">
+                                <i class="ri-add-circle-fill fs-1"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-semibold">Classic Croissant</h5>
+                                <p class="text-muted small mb-1">Bakery</p>
+                                <p class="card-text small">Flaky, buttery pastry with a golden, crisp outer layer.</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-amount fw-bold mb-0">$100</h5>
+                                <a href="./cart.html" class="btn btn-sm btn-primary rounded-pill px-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-10">
+                    <div class="card item-card overflow-hidden border-0 shadow rounded-4 mb-4 h-100">
+                        <!-- Image with Add Icon & Ratings -->
+                        <div class="position-relative">
+                            <img src="img/img-4.jpg" class="img-fluid rounded-top" alt="Cheese Garlic Toast">
+                            <!-- Star Ratings -->
+                            <div class="position-absolute top-0 start-0 m-2 text-warning z-2">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-line"></i>
+                            </div>
+
+                            <!-- Add Icon -->
+                            <div
+                                class="add-icon text-decoration-none text-white position-absolute end-0 bottom-0 lh-1 z-2">
+                                <i class="ri-add-circle-fill fs-1"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-semibold">Cheese Garlic Toast</h5>
+                                <p class="text-muted small mb-1">Snacks & Light Bites</p>
+                                <p class="card-text small">Crisp toast with melted cheese and garlic butter.</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-amount fw-bold mb-0">$120</h5>
+                                <a href="./cart.html" class="btn btn-sm btn-primary rounded-pill px-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery-section -->
+    <section class="section-lg" id="gallery">
+        <div class="container">
+            <div class="row text-center justify-content-center align-items-center mb-5">
+                <div class="col-12">
+                    <h1 class="fw-bold text-gradiant">Our Café Moments</h1>
+                    <p class="text-muted">A glimpse into the warm ambience, handcrafted brews, and delightful bites that
+                        make every visit memorable.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 d-flex flex-md-wrap mb-md-0 mb-3">
+                    <div class="gallery-card me-md-0 me-3 mb-md-3 mb-0">
+                        <div class="gallery-img position-relative overflow-hidden">
+                            <img src="img/coffee.jpg" alt="Coffee Cheers" class="img-fluid">
+                            <div class="overlay"></div>
+                            <div class="img-text d-flex flex-column justify-content-center align-items-center">
+                                <h3 class="text-center text-white">Coffee Cheers</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-img position-relative overflow-hidden">
+                            <img src="img/pizza.jpg" alt="Pizza with Friends" class="img-fluid">
+                            <div class="overlay"></div>
+                            <div class="img-text d-flex flex-column justify-content-center align-items-center">
+                                <h3 class="text-center text-white">Pizza with Friends</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-md-0 mb-3">
+                    <div class="gallery-card">
+                        <div class="gallery-img position-relative overflow-hidden">
+                            <img src="img/cafeinterier.jpg" alt="Café Interior" class="img-fluid">
+                            <div class="overlay"></div>
+                            <div class="img-text d-flex flex-column justify-content-center align-items-center">
+                                <h3 class="text-center text-white">Café Interior</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex flex-md-wrap">
+                    <div class="gallery-card me-md-0 me-3 mb-md-3 mb-0">
+                        <div class="gallery-img position-relative overflow-hidden">
+                            <img src="img/macrones.jpg" alt="Desserts & Macarons" class="img-fluid">
+                            <div class="overlay"></div>
+                            <div class="img-text d-flex flex-column justify-content-center align-items-center">
+                                <h3 class="text-center text-white">Desserts & Macarons</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-img position-relative overflow-hidden">
+                            <img src="img/croissant.jpg" alt="Croissants & Coffee" class="img-fluid">
+                            <div class="overlay overflow-hidden"></div>
+                            <div class="img-text d-flex flex-column justify-content-center align-items-center">
+                                <h3 class="text-center text-white">Croissants & Coffee</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial-section -->
+    <section class="section-lg section-bg-dark">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h6 class="text-light">Testimonials</h6>
+                    <h1 class="fw-semibold text-secondary">Happy Customers</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper testimonial-swiper" id="testiSlider">
+                        <div class="swiper-wrapper">
+                            <!-- Testimonial 1 -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="card border-0 testimonial-card position-relative overflow-hidden shadow rounded-4 p-4 h-100">
+                                    <div class="d-flex flex-column align-items-center text-center gap-3">
+                                        <div class="position-absolute bottom-0 end-0 mb-2 me-2" tabindex="0"
+                                            onclick="toggleLike(this)" data-active="false">
+                                            <i class="ri-heart-line fs-5 text-danger"></i>
+                                        </div>
+                                        <div class="position-relative">
+                                            <img src="img/user1.jpg" alt="user1"
+                                                class="rounded-circle border border-white shadow user-img">
+                                        </div>
+                                        <div class="testimonial-content z-1">
+                                            <h5 class="mb-1 fw-semibold card-title">Sarah L.</h5>
+                                            <p class="mb-0 card-text fst-italic text-muted small">"Hands down the best
+                                                coffee in town! The baristas really know their craft, and the latte art
+                                                is always a fun surprise."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 2 -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="card border-0 testimonial-card position-relative overflow-hidden shadow rounded-4 p-4 h-100">
+                                    <div class="d-flex flex-column align-items-center text-center gap-3">
+                                        <div class="position-absolute bottom-0 end-0 mb-2 me-2" tabindex="0"
+                                            onclick="toggleLike(this)" data-active="false">
+                                            <i class="ri-heart-line fs-5 text-danger"></i>
+                                        </div>
+                                        <div class="position-relative">
+                                            <img src="img/user2.jpg" alt="user2"
+                                                class="rounded-circle border border-white shadow user-img">
+                                        </div>
+                                        <div class="testimonial-content z-1">
+                                            <h5 class="mb-1 fw-semibold card-title">Ava S.</h5>
+                                            <p class="mb-0 card-text fst-italic text-muted small">"A must-visit for
+                                                coffee lovers. Clean, chill, and perfectly brewed every time!"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 3 -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="card border-0 testimonial-card position-relative overflow-hidden shadow rounded-4 p-4 h-100">
+                                    <div class="d-flex flex-column align-items-center text-center gap-3">
+                                        <div class="position-absolute bottom-0 end-0 mb-2 me-2" tabindex="0"
+                                            onclick="toggleLike(this)" data-active="false">
+                                            <i class="ri-heart-line fs-5 text-danger"></i>
+                                        </div>
+                                        <div class="position-relative">
+                                            <img src="img/user3.jpg" alt="user3"
+                                                class="rounded-circle border border-white shadow user-img">
+                                        </div>
+                                        <div class="testimonial-content z-1">
+                                            <h5 class="mb-1 fw-semibold card-title">Liam T.</h5>
+                                            <p class="mb-0 card-text fst-italic text-muted small">"The cozy atmosphere
+                                                and friendly service keep me coming back. Highly recommended!"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 4 -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="card border-0 testimonial-card position-relative overflow-hidden shadow rounded-4 p-4 h-100">
+                                    <div class="d-flex flex-column align-items-center text-center gap-3">
+                                        <div class="position-absolute bottom-0 end-0 mb-2 me-2" tabindex="0"
+                                            onclick="toggleLike(this)" data-active="false">
+                                            <i class="ri-heart-line fs-5 text-danger"></i>
+                                        </div>
+                                        <div class="position-relative">
+                                            <img src="img/user4.jpg" alt="user4"
+                                                class="rounded-circle border border-white shadow user-img">
+                                        </div>
+                                        <div class="testimonial-content z-1">
+                                            <h5 class="mb-1 fw-semibold card-title">Noah M.</h5>
+                                            <p class="mb-0 card-text fst-italic text-muted small">"I love how every cup
+                                                is consistent. Quality beans and great staff."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 5 -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="card border-0 testimonial-card position-relative overflow-hidden shadow rounded-4 p-4 h-100">
+                                    <div class="d-flex flex-column align-items-center text-center gap-3">
+                                        <div class="position-absolute bottom-0 end-0 mb-2 me-2" tabindex="0"
+                                            onclick="toggleLike(this)" data-active="false">
+                                            <i class="ri-heart-line fs-5 text-danger"></i>
+                                        </div>
+                                        <div class="position-relative">
+                                            <img src="img/user5.jpg" alt="user5"
+                                                class="rounded-circle border border-white shadow user-img">
+                                        </div>
+                                        <div class="testimonial-content z-1">
+                                            <h5 class="mb-1 fw-semibold card-title">Emily R.</h5>
+                                            <p class="mb-0 card-text fst-italic text-muted small">"My go-to spot for a
+                                                quick caffeine fix. Love the seasonal specials!"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 6 -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="card border-0 testimonial-card position-relative overflow-hidden shadow rounded-4 p-4 h-100">
+                                    <div class="d-flex flex-column align-items-center text-center gap-3">
+                                        <div class="position-absolute bottom-0 end-0 mb-2 me-2" tabindex="0"
+                                            onclick="toggleLike(this)" data-active="false">
+                                            <i class="ri-heart-line fs-5 text-danger"></i>
+                                        </div>
+                                        <div class="position-relative">
+                                            <img src="img/user6.jpg" alt="user6"
+                                                class="rounded-circle border border-white shadow user-img">
+                                        </div>
+                                        <div class="testimonial-content z-1">
+                                            <h5 class="mb-1 fw-semibold card-title">James C.</h5>
+                                            <p class="mb-0 card-text fst-italic text-muted small">"They always serve
+                                                with a smile. This place feels like home."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog-section -->
+    <section class="section-lg section-bg-light" id="blog">
+        <div class="container">
+            <div class="row justify-content-between align-items-center mb-5">
+                <div class="col-sm-6">
+                    <h2 class="border-start border-primary border-5 fw-bold text-gradiant ps-2 text-start">From Bean to
+                        Blog</h2>
+                    <p class="text-muted text-start">News, flavors, and updates from our café.</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="social-group-icon d-flex justify-content-sm-end align-items-center fs-4">
+                        <div class="social-icon me-2">
+                            <i class="ri-facebook-fill"></i>
+                        </div>
+                        <div class="social-icon me-2">
+                            <i class="ri-instagram-line"></i>
+                        </div>
+                        <div class="social-icon me-2">
+                            <i class="ri-twitter-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-1 border-primary overflow-hidden mb-5 shadow">
+                        <div class="row align-items-stretch">
+                            <div class="col-lg-4 col-md-6 p-0">
+                                <img src="img/blog1.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="...">
+                            </div>
+                            <div class="col-lg-8 col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title my-3"> “Brewed to Perfection: Behind the Scenes of Our Coffee
+                                        Craft”</h5>
+                                    <p class="lh-base">
+                                        At our café, coffee isn’t just a beverage — it’s a deeply rooted ritual, a
+                                        moment of pause in a busy world. Every cup we serve carries a story, beginning
+                                        with the careful selection of ethically sourced beans from sustainable farms
+                                        around the globe. We work closely with trusted growers to ensure every batch
+                                        supports communities and protects the environment. Once the beans arrive at our
+                                        café, the real magic begins.From mastering the perfect espresso shot to frothing
+                                        milk with precision, they bring both skill and passion to every cup.......
+                                    </p>
+                                    <a href="#" class="text-decoration-none text-light-emphasis">Read More<i
+                                            class="ri-arrow-right-line"></i></a>
+                                    <div class="my-3 text-body-secondary">
+                                        <i class="ri-timer-2-line"></i><small>Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 ">
+                    <div class="card border-1 border-primary overflow-hidden mb-5 shadow">
+                        <div class="row align-items-stretch">
+                            <div class="col-lg-8 col-md-6 order-md-1 order-2">
+                                <div class="card-body">
+                                    <h5 class="card-title my-3">“5 Reasons Our Café Is Your Next Favorite Hangout Spot”
+                                    </h5>
+                                    <p>Looking for a cozy spot to unwind, read, or work? Here’s why people keep coming
+                                        back:</p>
+                                    <ul class="text-light-emphasis">
+                                        <li class="mb-1">Comfortable, stylish seating that creates the perfect
+                                            environment for relaxation, conversation, or quiet time alone.</li>
+                                        <li class="mb-1">Warm, welcoming staff Read why regulars call us their “second
+                                            home.”</li>
+                                        <li class="mb-1">Handcrafted coffee and local pastries</li>
+                                        <li class="mb-1">Free high-speed Wi-Fi to keep you connected, whether you're
+                                            working remotely or catching up online.</li>
+                                        <li class="mb-1">Soothing music and cozy lighting</li>
+                                    </ul>
+                                    <a href="#" class="text-decoration-none text-light-emphasis">Read More<i
+                                            class="ri-arrow-right-line"></i></a>
+                                    <div class="my-3 text-body-secondary">
+                                        <i class="ri-calendar-line"></i> <small>3 days ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 order-md-2 order-1 p-0">
+                                <img src="img/blog2.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="card border-1 border-primary overflow-hidden shadow">
+                        <div class="row align-items-stretch">
+                            <div class="col-lg-4 col-md-6  p-0">
+                                <img src="img/blog3.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="...">
+                            </div>
+                            <div class="col-lg-8 col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title my-3">“Seasonal Sips: What’s New on the Menu This Month”</h5>
+                                    <p class="lh-base">
+                                        As the seasons change, so do the flavors at our café. This month, we’re
+                                        introducing a delightful array of seasonal beverages designed to warm your heart
+                                        and awaken your taste buds. Enjoy the rich, velvety notes of our Pumpkin Spice
+                                        Latte, topped with spiced whipped cream and a dash of cinnamon — perfect for
+                                        cozy afternoons.Craving something cool and crisp? Try our Iced Apple Chai,
+                                        blending crisp apple undertones with warm chai spices, ideal for transitional
+                                        weather........
+                                    </p>
+                                    <a href="#" class="text-decoration-none text-light-emphasis">Read More<i
+                                            class="ri-arrow-right-line"></i></a>
+                                    <div class="my-3 text-body-secondary">
+                                        <i class="ri-calendar-line"></i> <small>December 13, 2025</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- booking-section -->
+    <section id="reservation" class="overflow-hidden">
+        <div class="img-effect booking-img  position-relative">
+            <div class="overlay position-absolute"></div>
+            <div
+                class="d-flex flex-column justify-content-center align-items-center position-absolute text-center top-0 start-0 w-100 h-100 z-2">
+                <p class="text-secondary fs-25 fw-medium mb-4">Book Now</p>
+                <h1 class="section-title text-light fw-semibold">Reserve Your Table Today</h1>
+                <button class="btn btn-custom mt-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                        class="ri-reserved-line"></i> Make A Reservation</button>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-5 d-lg-block d-none">
+                                <img src="img/disacount-img.jpg" alt="" class="w-100 h-100 object-fit-cover">
+                            </div>
+                            <div class="col-lg-7 col-12">
+                                <h2 class="text-gradiant fw-semibold mt-lg-4 text-center" id="staticBackdropLabel">Make
+                                    A Reservation</h2>
+                                <p class="text-muted mb-4 mb-lg-5 text-center">Booking Table<span class="fw-semibold">
+                                        +91 9999 000 999</span> We’ll confirm your reservation via phone.</p>
+                                <button type="button" class="btn btn-close top-0 end-0 mt-2 position-absolute"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                <form class="row">
+                                    <div class="col-lg-6 col-12 mb-4">
+                                        <input type="text" class="form-control" placeholder="Your Name" id="bookingName"
+                                            name="bookingName" required>
+                                    </div>
+                                    <div class="col-lg-6 col-12  mb-4">
+                                        <input type="email" class="form-control" placeholder="Email Address"
+                                            id="bookingEmail" name="bookingEmail" required>
+                                    </div>
+                                    <div class="col-lg-4 col-12  mb-4">
+                                        <input type="tel" class="form-control" placeholder="Phone Number"
+                                            id="bookingPhone" name="bookingPhone" required>
+                                    </div>
+                                    <div class="col-lg-4 col-6  mb-4">
+                                        <input type="date" class="form-control" id="bookingDate" name="bookingDate"
+                                            required>
+                                    </div>
+                                    <div class="col-lg-4 col-6 mb-4">
+                                        <input type="time" class="form-control" id="bookingTime" name="bookingTime"
+                                            required>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-12 mb-4">
+                                        <select class="form-select" id="bookingPerson" name="bookingPerson" required>
+                                            <option value="" disabled selected>Number Of Person</option>
+                                            <option value="1">Single / Solo Guest</option>
+                                            <option value="2">Couple / Two People</option>
+                                            <option value="3">Group (3-4 People)</option>
+                                            <option value="4">Family (4-6 People)</option>
+                                            <option value="5">Large Group (7+ People)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-12 mb-4">
+                                        <select class="form-select" id="bookingTable" name="bookingTable" required>
+                                            <option value="" disabled selected>Select a Seating Option</option>
+                                            <option value="1">Indoor Table</option>
+                                            <option value="2">Outdoor Table</option>
+                                            <option value="3">Lounge Table</option>
+                                            <option value="4">Study/Work Table</option>
+                                            <option value="5">VIP or Reserved Table</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 mb-lg-5 mb-4">
+                                        <textarea class="form-control" id="bookingMsg" name="bookingMsg" rows="3"
+                                            placeholder="Your Message...." required></textarea>
+                                    </div>
+                                    <div
+                                        class="col-sm-12 d-flex flex-sm-row flex-column align-items-center justify-content-center">
+                                        <button type="submit" class="btn btn-primary me-sm-3 me-0 mb-sm-0 mb-3">Reserve
+                                            Table</button>
+                                        <button type="button" class="btn btn-outline" data-bs-dismiss="modal">Cancel
+                                            Reservation</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- partnership-section overview -->
+    <section class="section-sm section-bg-secondry">
+        <div class="container">
+            <div class="row text-center justify-content-center align-items-center mb-5">
+                <div class="col-12">
+                    <h1 class="fw-bold text-gradiant">Our Trusted Partners</h1>
+                    <p class="text-muted">We proudly collaborate with leading brands, local artisans, and quality
+                        suppliers who share our commitment to excellence and authenticity.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper partner-swiper" id="partnerSlider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/1.png" alt="cold-coffee" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/2.png" alt="cold-coffee" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/3.png" alt="cold-coffee" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/4.png" alt="cold-coffee" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/5.png" alt="cold-coffee" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/6.png" alt="cold-coffee" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/7.png" alt="cold-coffee" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/8.png" alt="cold-coffee" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/9.png" alt="cold-coffee" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/10.png" alt="cold-coffee" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer-section -->
+    <footer class="section-sm pb-3 section-bg-light border-top">
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <div class="col-lg-10 col-12 mb-4">
+                    <a class="d-flex justify-content-center align-items-center gap-3 text-decoration-none" href="#">
+                        <img src="img/logo-dark.png" alt="Logo" height="42" class="">
+                    </a>
+                    <p class="text-muted fst-italic mt-2 fs-6">A Café Experience Designed to Awaken Your Senses</p>
+
+                    <div class="text-center">
+                        <ul
+                            class="list-group list-group-horizontal flex-wrap gap-5 justify-content-center align-items-center border-0">
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">Home</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">About Us</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">Categories</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">Gallery</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">Blog</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">Book a Table</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row text-md-start text-center gy-4">
+                <div class="col-md-4 col-12">
+                    <h5 class="fw-semibold mb-3 text-primary">Address</h5>
+                    <p class="m-0 text-muted">82, Rosewood Avenue Willow Creek, United States CA 90231</p>
+                </div>
+                <div class="col-md-4 col-12">
+                    <h5 class="fw-semibold mb-3 text-primary">CONTACT US</h5>
+                    <ul class="list-unstyled text-muted fs-6">
+                        <li class="item-list mb-2">
+                            <span class="sub-info"><i class="ri-phone-line me-2 text-primary"></i>+1 123 456 7890</span>
+                        </li>
+                        <li class="item-list">
+                            <span class="sub-info text-break"><i class="ri-mail-line me-2 text-primary"></i>café<a
+                                    href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                    data-cfemail="c2a3afadb7b082a5afa3abaeeca1adaf">[email&#160;protected]</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                    <h5 class="fw-semibold mb-3 text-primary">Our Newsletter</h5>
+                    <p class="text-muted">Join our newsletter to receive exclusive updates and news!</p>
+                    <form>
+                        <div
+                            class="d-flex flex-column flex-sm-row gap-2 justify-content-center justify-content-md-start">
+                            <input type="email" class="form-control form-control-sm" placeholder="Enter Your Email"
+                                id="footerNewsLetter" name="footerNewsLetter" required>
+                            <button type="submit" class="btn btn-primary btn-sm rounded-pill px-4">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                        <div class="footer-social-icon">
+                            <a href="#" class="text-primary footer-icon d-inline-block fs-4 me-3 hover-scale"><i
+                                    class="ri-youtube-line"></i></a>
+                            <a href="#" class="text-primary footer-icon d-inline-block fs-4 me-3 hover-scale"><i
+                                    class="ri-google-line"></i></a>
+                            <a href="#" class="text-primary footer-icon d-inline-block fs-4 me-3 hover-scale"><i
+                                    class="ri-facebook-box-line"></i></a>
+                            <a href="#" class="text-primary fs-4 hover-scale"><i class="ri-instagram-line"></i></a>
+                        </div>
+                        <ul class="d-flex list-unstyled mb-0 gap-4">
+                            <li class="item-list">
+                                <a class="text-decoration-none text-primary fw-semibold" href="#">Privacy Policy</a>
+                            </li>
+                            <li class="item-list">
+                                <a class="text-decoration-none text-primary fw-semibold" href="#">Terms of Use</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-dark text-center small fw-medium mb-0">&copy;
+                        <script data-cfasync="false"
+                            src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                        <script>document.write(new Date().getFullYear());</script> Koffuu - Mantraksh Devs. All rights
+                        reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sign in modal -->
+    <section class="auth-section">
+        <div class="modal fade" id="exampleModalToggle" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content overflow-hidden position-relative">
+                    <div class="modal-body auth-img p-0">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-6 col-12 section-bg-light">
+                                <div class="modal-form">
+                                    <h1 class="text-center fw-bold text-primary">Sign Up</h1>
+                                    <p class="text-center text-muted mb-4">Create your new account</p>
+                                    <button type="button" class="btn btn-close top-0 end-0 position-absolute mt-2"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <form>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="Full Name"
+                                                id="signUpName" name="signUpName">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" placeholder="Email Address"
+                                                id="signUpEmail" name="signUpEmail" autocomplete="username">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="password" id="signUpPassword" name="signUpPassword"
+                                                class="form-control" placeholder="Password"
+                                                autocomplete="current-password">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="password" id="signUpConfirmPassword"
+                                                name="signUpConfirmPassword" class="form-control mb-2"
+                                                placeholder="Confirm Password" autocomplete="current-password">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="checkbox" class="form-check-input" id="signUpRemember"
+                                                name="signUpRemember">
+                                            <label class="form-check-label" for="signUpRemember"> Remember Me</label>
+                                        </div>
+                                        <div class="text-center">
+                                            <a href="./index.html" class="btn btn-primary rounded-5 w-100">Register</a>
+                                        </div>
+                                        <div class="my-4">
+                                            <h6
+                                                class="underline-after text-center text-muted mb-0 position-relative z-0">
+                                                <span class="position-relative z-1 section-bg-light px-2">or continue
+                                                    with</span>
+                                            </h6>
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="d-flex justify-content-evenly">
+                                                <div class="auth-icon-wrapper"><i
+                                                        class="ri-facebook-circle-fill fs-2"></i></div>
+                                                <div class="auth-icon-wrapper"><i class="ri-google-fill fs-2"></i></div>
+                                                <div class="auth-icon-wrapper"><i class="ri-apple-fill fs-2"></i></div>
+                                            </div>
+                                        </div>
+                                        <p class="form-text text-center">Already have an account? <a href="./login.html"
+                                                class="fw-bold text-danger-emphasis" data-bs-target="#loginModal"
+                                                data-bs-toggle="modal">Log In</a> </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content overflow-hidden position-relative">
+                    <div class="modal-body auth-img p-0">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-6 col-12 section-bg-light">
+                                <div class="modal-form auth-form">
+                                    <h1 class="text-primary text-center fw-bold ">Login</h1>
+                                    <p class="text-center text-muted mb-4">Login to your account</p>
+                                    <button type="button" class="btn btn-close top-0 end-0 mt-2 position-absolute"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <form class="row">
+                                        <div class="col-12 mb-3">
+                                            <input type="email" class="form-control" placeholder="Email Address"
+                                                id="loginEmail" name="loginEmail" autocomplete="username">
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <input type="password" id="loginPassword" name="loginPassword"
+                                                class="form-control mb-2" placeholder="Password"
+                                                autocomplete="current-password">
+                                            <a href="#"
+                                                class="text-decoration-none fw-semibold text-danger-emphasis">Forget
+                                                Password?</a>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <a href="./index.html" class="btn btn-primary rounded-5 w-100">Login</a>
+                                        </div>
+                                        <div class="col-12 my-4">
+                                            <h6
+                                                class="underline-after text-center text-muted mb-0 position-relative z-0">
+                                                <span class="position-relative z-1 section-bg-light px-2">or continue
+                                                    with</span>
+                                            </h6>
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-evenly mb-4">
+                                            <div class="auth-icon-wrapper"><i class="ri-facebook-circle-fill fs-2"></i>
+                                            </div>
+                                            <div class="auth-icon-wrapper"><i class="ri-google-fill fs-2"></i></div>
+                                            <div class="auth-icon-wrapper"><i class="ri-apple-fill fs-2"></i></div>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="form-text text-center">Don't haccount?
+                                                <a href="./login.html" class="fw-bold  text-danger-emphasis"
+                                                    data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Create
+                                                    Account</a>
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="./js/scroll-trigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
