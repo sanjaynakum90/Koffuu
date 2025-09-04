@@ -1,0 +1,606 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koffuu - Contact Us | Premium Coffee Shop & Café</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl navbar-light shadow-sm fixed-top">
+        <div class="container">
+            <a href="/" class="navbar-brand  align-items-center me-2">
+                <img src="./img/logo-dark.png" alt="Logo" height="34" class="d-none d-md-block">
+                <img src="./img/logo-sm.png" alt="Logo" height="34" class="d-md-none d-block">
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <div class="d-flex d-xl-none align-items-center">
+                <a href="./cart.html" class="text-decoration-none position-relative me-4">
+                    <i class="ri-shopping-cart-2-line fs-4 text-dark"></i>
+                    <span
+                        class="position-absolute top-0 translate-middle mt-1 rounded-circle bg-danger text-white order-count">0+</span>
+                </a>
+                <button class="navbar-toggler p-1 fs-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="ri-menu-3-line fs-3"></i>
+                </button>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="collapse navbar-collapse navbar-custom" id="navbarAnimated">
+                <ul class="navbar-nav mx-auto" id="navbarNav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservation">Book a Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+
+                <div class="d-none d-xl-flex align-items-center ms-auto" id="navbarSupportedContent">
+                    <a href="./cart.html"
+                        class="text-decoration-none position-relative link-body-emphasis fw-semibold me-3">
+                        <i class="ri-shopping-cart-2-line fs-3"></i>
+                        <span
+                            class="position-absolute top-0 translate-middle mt-1 rounded-circle bg-danger text-white order-count">0+</span>
+                    </a>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalToggle">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- image-overlay section -->
+    <section>
+        <div class="img-effect hero-secondary-img position-relative">
+            <div class="overlay position-absolute"></div>
+            <div
+                class="d-flex flex-column justify-content-center align-items-center position-absolute text-center top-0 start-0 w-100 h-100 z-2">
+                <h1 class="text-light fw-bold text-center mt-5 mb-4 fs-50">My Order</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="./index.html"
+                                class="text-decoration-none text-light">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Order Cart</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- process section -->
+    <section class="section-sm pb-0 cart-process-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <h5 class="text-center fw-bold mb-5 text-muted">checkout</h5>
+                    <div class="d-flex align-items-center justify-content-between mt-3 mb-2">
+                        <div class="text-center">
+                            <p
+                                class="d-inline-block border border-3 border-success-subtle text-white bg-success rounded-circle m-0 px-2">
+                                1</p>
+                            <p class="mt-2">Shipping</p>
+                        </div>
+                        <div class="text-center flex-grow-1  process-line position-relative ">
+                            <p
+                                class="d-inline-block border border-3 border-dark-subtle text-body-tertiary bg-white rounded-circle m-0 px-2 z-1">
+                                2</p>
+                            <p class="mt-2">Delivery</p>
+                        </div>
+                        <div class="text-center">
+                            <p
+                                class="d-inline-block border border-3 border-dark-subtle text-body-tertiary bg-white rounded-circle m-0 px-2">
+                                3</p>
+                            <p class="mt-2">Payment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- order-section -->
+    <section class="section-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold text-gradiant">Review Your Order</h2>
+                        <h6 class="section-des text-muted">Review and manage your selected items before checkout.</h6>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover overflow-hidden cart-table align-middle text-center">
+                            <thead class="table-light">
+                                <tr class="fs-15">
+                                    <th scope="col" class="text-start ps-3">Items</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Category</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quntity</th>
+                                    <th scope="col">Total</th>
+                                    <th scope="col">Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="order-item-row align-middle" style="transition: background-color 0.3s ease;">
+                                    <td class="text-start ps-3">
+                                        <img src="./img/img-1.jpg" alt="Classic Espresso"
+                                            class="table-img rounded"
+                                            style="width: 60px; height: 60px; object-fit: cover;">
+                                    </td>
+                                    <td>Classic Espresso</td>
+                                    <td>Beverages</td>
+                                    <td>$30</td>
+                                    <td>
+                                        <nav aria-label="Quantity selector">
+                                            <ul class="pagination pagination-sm justify-content-center m-0">
+                                                <li class="page-item">
+                                                    <button class="page-link text-black shadow-none add-qty"
+                                                        aria-label="Add quantity">
+                                                        <i class="ri-add-large-line"></i>
+                                                    </button>
+                                                </li>
+                                                <li class="page-item">
+                                                    <span class="page-link px-3 text-muted">1</span>
+                                                </li>
+                                                <li class="page-item">
+                                                    <button class="page-link text-black shadow-none remove-qty"
+                                                        aria-label="Remove quantity">
+                                                        <i class="ri-subtract-line"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </td>
+                                    <td>$30</td>
+                                    <td>
+                                        <button class="btn btn-outline-danger btn-sm remove-btn"
+                                            aria-label="Remove item">
+                                            <i class="ri-close-large-line"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <!-- Repeat similar structure for other rows -->
+                                <tr class="order-item-row align-middle" style="transition: background-color 0.3s ease;">
+                                    <td class="text-start ps-3">
+                                        <img src="./img/img-2.jpg" alt="Cappuccino"
+                                            class="table-img rounded"
+                                            style="width: 60px; height: 60px; object-fit: cover;">
+                                    </td>
+                                    <td>Cappuccino</td>
+                                    <td>Beverages</td>
+                                    <td>$50</td>
+                                    <td>
+                                        <nav aria-label="Quantity selector">
+                                            <ul class="pagination pagination-sm justify-content-center m-0">
+                                                <li class="page-item">
+                                                    <button class="page-link text-black shadow-none add-qty"
+                                                        aria-label="Add quantity">
+                                                        <i class="ri-add-large-line"></i>
+                                                    </button>
+                                                </li>
+                                                <li class="page-item">
+                                                    <span class="page-link px-3 text-muted">2</span>
+                                                </li>
+                                                <li class="page-item">
+                                                    <button class="page-link text-black shadow-none remove-qty"
+                                                        aria-label="Remove quantity">
+                                                        <i class="ri-subtract-line"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </td>
+                                    <td>$100</td>
+                                    <td>
+                                        <button class="btn btn-outline-danger btn-sm remove-btn"
+                                            aria-label="Remove item">
+                                            <i class="ri-close-large-line"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <!-- More rows... -->
+                                <tr class="order-item-row align-middle" style="transition: background-color 0.3s ease;">
+                                    <td class="text-start ps-3">
+                                        <img src="./img/img-3.jpg" alt="Classic Croissant"
+                                            class="table-img rounded"
+                                            style="width: 60px; height: 60px; object-fit: cover;">
+                                    </td>
+                                    <td>Classic Croissant</td>
+                                    <td>Bakery</td>
+                                    <td>$100</td>
+                                    <td>
+                                        <nav aria-label="Quantity selector">
+                                            <ul class="pagination pagination-sm justify-content-center m-0">
+                                                <li class="page-item">
+                                                    <button class="page-link text-black shadow-none add-qty"
+                                                        aria-label="Add quantity">
+                                                        <i class="ri-add-large-line"></i>
+                                                    </button>
+                                                </li>
+                                                <li class="page-item">
+                                                    <span class="page-link px-3 text-muted">1</span>
+                                                </li>
+                                                <li class="page-item">
+                                                    <button class="page-link text-black shadow-none remove-qty"
+                                                        aria-label="Remove quantity">
+                                                        <i class="ri-subtract-line"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </td>
+                                    <td>$100</td>
+                                    <td>
+                                        <button class="btn btn-outline-danger btn-sm remove-btn"
+                                            aria-label="Remove item">
+                                            <i class="ri-close-large-line"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr class="order-item-row align-middle" style="transition: background-color 0.3s ease;">
+                                    <td class="text-start ps-3">
+                                        <img src="./img/img-4.jpg" alt="Cheese Garlic Toast"
+                                            class="table-img rounded"
+                                            style="width: 60px; height: 60px; object-fit: cover;">
+                                    </td>
+                                    <td>Cheese Garlic Toast</td>
+                                    <td>Snacks & Light Bites</td>
+                                    <td>$120</td>
+                                    <td>
+                                        <nav aria-label="Quantity selector">
+                                            <ul class="pagination pagination-sm justify-content-center m-0">
+                                                <li class="page-item">
+                                                    <button class="page-link text-black shadow-none add-qty"
+                                                        aria-label="Add quantity">
+                                                        <i class="ri-add-large-line"></i>
+                                                    </button>
+                                                </li>
+                                                <li class="page-item">
+                                                    <span class="page-link px-3 text-muted">3</span>
+                                                </li>
+                                                <li class="page-item">
+                                                    <button class="page-link text-black shadow-none remove-qty"
+                                                        aria-label="Remove quantity">
+                                                        <i class="ri-subtract-line"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </td>
+                                    <td>$360</td>
+                                    <td>
+                                        <button class="btn btn-outline-danger btn-sm remove-btn"
+                                            aria-label="Remove item">
+                                            <i class="ri-close-large-line"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between align-items-center mt-5">
+                <div class="col-md-6 mb-lg-0 order-md-1 order-2">
+                    <h3 class="border-start border-primary border-5 ps-2 mb-3 text-gradiant fw-bold">Cart Total</h3>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-order-summary">
+                            <tbody>
+                                <tr>
+                                    <td>Subtotal</td>
+                                    <td class="text-end">$590</td>
+                                </tr>
+                                <tr>
+                                    <td>Discount</td>
+                                    <td class="text-end">0%</td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery Fee</td>
+                                    <td class="text-end">$50</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Total Amount</th>
+                                    <th class="text-end">$640</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <a href="./checkout.html" class="btn btn-primary btn-lg w-100">PROCEED TO CHECKOUT</a>
+                </div>
+                <div class="col-md-5 offset-lg-1 mb-5 order-md-2 order-1">
+                    <h5 class="fw-semibold">Discount Codes</h5>
+                    <p>Have a discount coupon? Enter your code in the field below and click "Apply" to redeem.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control ps-3 rounded-start-pill shadow-none"
+                                placeholder="Enter Your Coupon Code" aria-label="Coupon Code"
+                                aria-describedby="button-addon2">
+                            <button class="btn btn-primary fw-semibold rounded-end-pill" type="button"
+                                id="button-addon2">Apply</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer-section -->
+    <footer class="section-sm pb-3 section-bg-light border-top">
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <div class="col-lg-10 col-12 mb-4">
+                    <a class="d-flex justify-content-center align-items-center gap-3 text-decoration-none" href="#">
+                        <img src="./img/logo-dark.png" alt="Logo" height="42" class="">
+                    </a>
+                    <p class="text-muted fst-italic mt-2 fs-6">A Café Experience Designed to Awaken Your Senses</p>
+
+                    <div class="text-center">
+                        <ul
+                            class="list-group list-group-horizontal flex-wrap gap-5 justify-content-center align-items-center border-0">
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">Home</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">About Us</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">Categories</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">Gallery</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">Blog</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">Book a Table</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row text-md-start text-center gy-4">
+                <div class="col-md-4 col-12">
+                    <h5 class="fw-semibold mb-3 text-primary">Address</h5>
+                    <p class="m-0 text-muted">82, Rosewood Avenue Willow Creek, United States CA 90231</p>
+                </div>
+                <div class="col-md-4 col-12">
+                    <h5 class="fw-semibold mb-3 text-primary">CONTACT US</h5>
+                    <ul class="list-unstyled text-muted fs-6">
+                        <li class="item-list mb-2">
+                            <span class="sub-info"><i class="ri-phone-line me-2 text-primary"></i>+1 123 456 7890</span>
+                        </li>
+                        <li class="item-list">
+                            <span class="sub-info text-break"><i class="ri-mail-line me-2 text-primary"></i>café@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                    <h5 class="fw-semibold mb-3 text-primary">Our Newsletter</h5>
+                    <p class="text-muted">Join our newsletter to receive exclusive updates and news!</p>
+                    <form>
+                        <div
+                            class="d-flex flex-column flex-sm-row gap-2 justify-content-center justify-content-md-start">
+                            <input type="email" class="form-control form-control-sm" placeholder="Enter Your Email"
+                                id="footerNewsLetter" name="footerNewsLetter" required>
+                            <button type="submit" class="btn btn-primary btn-sm rounded-pill px-4">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                        <div class="footer-social-icon">
+                            <a href="#" class="text-primary footer-icon d-inline-block fs-4 me-3 hover-scale"><i
+                                    class="ri-youtube-line"></i></a>
+                            <a href="#" class="text-primary footer-icon d-inline-block fs-4 me-3 hover-scale"><i
+                                    class="ri-google-line"></i></a>
+                            <a href="#" class="text-primary footer-icon d-inline-block fs-4 me-3 hover-scale"><i
+                                    class="ri-facebook-box-line"></i></a>
+                            <a href="#" class="text-primary fs-4 hover-scale"><i class="ri-instagram-line"></i></a>
+                        </div>
+                        <ul class="d-flex list-unstyled mb-0 gap-4">
+                            <li class="item-list">
+                                <a class="text-decoration-none text-primary fw-semibold" href="#">Privacy Policy</a>
+                            </li>
+                            <li class="item-list">
+                                <a class="text-decoration-none text-primary fw-semibold" href="#">Terms of Use</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-dark text-center small fw-medium mb-0">&copy;
+                        <script data-cfasync="false"
+                            src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                        <script>document.write(new Date().getFullYear());</script> Koffuu - Mantraksh Devs. All rights
+                        reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sign in modal -->
+    <section class="auth-section">
+        <div class="modal fade" id="exampleModalToggle" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content overflow-hidden position-relative">
+                    <div class="modal-body auth-img p-0">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-6 col-12 section-bg-light">
+                                <div class="modal-form">
+                                    <h1 class="text-center fw-bold text-primary">Sign Up</h1>
+                                    <p class="text-center text-muted mb-4">Create your new account</p>
+                                    <button type="button" class="btn btn-close top-0 end-0 position-absolute mt-2"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <form>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="Full Name"
+                                                id="signUpName" name="signUpName">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" placeholder="Email Address"
+                                                id="signUpEmail" name="signUpEmail" autocomplete="username">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="password" id="signUpPassword" name="signUpPassword"
+                                                class="form-control" placeholder="Password"
+                                                autocomplete="current-password">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="password" id="signUpConfirmPassword"
+                                                name="signUpConfirmPassword" class="form-control mb-2"
+                                                placeholder="Confirm Password" autocomplete="current-password">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="checkbox" class="form-check-input" id="signUpRemember"
+                                                name="signUpRemember">
+                                            <label class="form-check-label" for="signUpRemember"> Remember Me</label>
+                                        </div>
+                                        <div class="text-center">
+                                            <a href="./index.html" class="btn btn-primary rounded-5 w-100">Register</a>
+                                        </div>
+                                        <div class="my-4">
+                                            <h6
+                                                class="underline-after text-center text-muted mb-0 position-relative z-0">
+                                                <span class="position-relative z-1 section-bg-light px-2">or continue
+                                                    with</span>
+                                            </h6>
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="d-flex justify-content-evenly">
+                                                <div class="auth-icon-wrapper"><i
+                                                        class="ri-facebook-circle-fill fs-2"></i></div>
+                                                <div class="auth-icon-wrapper"><i class="ri-google-fill fs-2"></i></div>
+                                                <div class="auth-icon-wrapper"><i class="ri-apple-fill fs-2"></i></div>
+                                            </div>
+                                        </div>
+                                        <p class="form-text text-center">Already have an account? <a href="./login.html"
+                                                class="fw-bold text-danger-emphasis" data-bs-target="#loginModal"
+                                                data-bs-toggle="modal">Log In</a> </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content overflow-hidden position-relative">
+                    <div class="modal-body auth-img p-0">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-6 col-12 section-bg-light">
+                                <div class="modal-form auth-form">
+                                    <h1 class="text-primary text-center fw-bold ">Login</h1>
+                                    <p class="text-center text-muted mb-4">Login to your account</p>
+                                    <button type="button" class="btn btn-close top-0 end-0 mt-2 position-absolute"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <form class="row">
+                                        <div class="col-12 mb-3">
+                                            <input type="email" class="form-control" placeholder="Email Address"
+                                                id="loginEmail" name="loginEmail" autocomplete="username">
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <input type="password" id="loginPassword" name="loginPassword"
+                                                class="form-control mb-2" placeholder="Password"
+                                                autocomplete="current-password">
+                                            <a href="#"
+                                                class="text-decoration-none fw-semibold text-danger-emphasis">Forget
+                                                Password?</a>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <a href="./index.html" class="btn btn-primary rounded-5 w-100">Login</a>
+                                        </div>
+                                        <div class="col-12 my-4">
+                                            <h6
+                                                class="underline-after text-center text-muted mb-0 position-relative z-0">
+                                                <span class="position-relative z-1 section-bg-light px-2">or continue
+                                                    with</span>
+                                            </h6>
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-evenly mb-4">
+                                            <div class="auth-icon-wrapper"><i class="ri-facebook-circle-fill fs-2"></i>
+                                            </div>
+                                            <div class="auth-icon-wrapper"><i class="ri-google-fill fs-2"></i></div>
+                                            <div class="auth-icon-wrapper"><i class="ri-apple-fill fs-2"></i></div>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="form-text text-center">Don't haccount?
+                                                <a href="./login.html" class="fw-bold  text-danger-emphasis"
+                                                    data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Create
+                                                    Account</a>
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="./js/scroll-trigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

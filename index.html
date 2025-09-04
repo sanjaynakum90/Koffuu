@@ -1,6 +1,3 @@
-/* Keep only these main color classes as they're used */
-.text-primary
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,7 +57,7 @@
                         <a class="nav-link" href="#reservation">Book a Table</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contactus.html">Contact Us</a>
+                        <a class="nav-link" href="./contect.html">Contact Us</a>
                     </li>
                 </ul>
 
@@ -75,14 +72,16 @@
                         data-bs-target="#exampleModalToggle">Sign Up</button>
                 </div>
             </div>
+            </div>
         </div>
     </nav>
+
 
     <!-- hero-section -->
     <section class="hero-section-primary vh-100 position-relative d-flex justify-content-center" id="home">
         <div id="carouselExample" class="carousel slide carousel-fade position-absolute h-100 w-100 z-0"
             data-bs-ride="carousel" data-bs-touch="false">
-            <div class="carousel-inner h-100">
+            <div class="carousel-inner h-100" data-aos="fade-up" data-aos-duration="1200">
                 <div class="carousel-item active h-100">
                     <img src="img/main-1.jpg" class="d-block h-100 w-100 object-fit-cover" alt="...">
                 </div>
@@ -657,100 +656,103 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card border-1 border-primary overflow-hidden mb-5 shadow transition-all hover-scale">
-                    <div class="row align-items-stretch">
-                        <div class="col-lg-4 col-md-6 p-0">
-                            <img src="img/blog1.jpg" class="img-fluid h-100 w-100 object-fit-cover hover-zoom"
-                                alt="...">
+                        <div class="row align-items-stretch">
+                            <div class="col-lg-4 col-md-6 p-0">
+                                <img src="img/blog1.jpg" class="img-fluid h-100 w-100 object-fit-cover hover-zoom"
+                                    alt="...">
+                            </div>
+                            <div class="col-lg-8 col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title my-3 hover-text-primary"> "Brewed to Perfection: Behind the
+                                        Scenes
+                                        of Our Coffee
+                                        Craft"</h5>
+                                    <p class="lh-base">
+                                        At our café, coffee isn't just a beverage — it's a deeply rooted ritual, a
+                                        moment of pause in a busy world. Every cup we serve carries a story, beginning
+                                        with the careful selection of ethically sourced beans from sustainable farms
+                                        around the globe. We work closely with trusted growers to ensure every batch
+                                        supports communities and protects the environment. Once the beans arrive at our
+                                        café, the real magic begins.From mastering the perfect espresso shot to frothing
+                                        milk with precision, they bring both skill and passion to every cup.......
+                                    </p>
+                                    <a href="#" class="text-decoration-none text-light-emphasis hover-text-primary">Read
+                                        More<i class="ri-arrow-right-line"></i></a>
+                                    <div class="my-3 text-body-secondary">
+                                        <i class="ri-timer-2-line"></i><small>Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-8 col-md-6">
-                            <div class="card-body">
-                                <h5 class="card-title my-3 hover-text-primary"> "Brewed to Perfection: Behind the Scenes
-                                    of Our Coffee
-                                    Craft"</h5>
-                                <p class="lh-base">
-                                    At our café, coffee isn't just a beverage — it's a deeply rooted ritual, a
-                                    moment of pause in a busy world. Every cup we serve carries a story, beginning
-                                    with the careful selection of ethically sourced beans from sustainable farms
-                                    around the globe. We work closely with trusted growers to ensure every batch
-                                    supports communities and protects the environment. Once the beans arrive at our
-                                    café, the real magic begins.From mastering the perfect espresso shot to frothing
-                                    milk with precision, they bring both skill and passion to every cup.......
-                                </p>
-                                <a href="#" class="text-decoration-none text-light-emphasis hover-text-primary">Read
-                                    More<i class="ri-arrow-right-line"></i></a>
-                                <div class="my-3 text-body-secondary">
-                                    <i class="ri-timer-2-line"></i><small>Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="card border-1 border-primary overflow-hidden mb-5 shadow transition-all hover-scale">
+                        <div class="row align-items-stretch">
+                            <div class="col-lg-8 col-md-6 order-md-1 order-2">
+                                <div class="card-body">
+                                    <h5 class="card-title my-3 hover-text-primary">"5 Reasons Our Café Is Your Next
+                                        Favorite
+                                        Hangout Spot"
+                                    </h5>
+                                    <p>Looking for a cozy spot to unwind, read, or work? Here's why people keep coming
+                                        back:</p>
+                                    <ul class="text-light-emphasis">
+                                        <li class="mb-1">Comfortable, stylish seating that creates the perfect
+                                            environment for relaxation, conversation, or quiet time alone.</li>
+                                        <li class="mb-1">Warm, welcoming staff Read why regulars call us their "second
+                                            home."</li>
+                                        <li class="mb-1">Handcrafted coffee and local pastries</li>
+                                        <li class="mb-1">Free high-speed Wi-Fi to keep you connected, whether you're
+                                            working remotely or catching up online.</li>
+                                        <li class="mb-1">Soothing music and cozy lighting</li>
+                                    </ul>
+                                    <a href="#" class="text-decoration-none text-light-emphasis hover-text-primary">Read
+                                        More<i class="ri-arrow-right-line"></i></a>
+                                    <div class="my-3 text-body-secondary">
+                                        <i class="ri-calendar-line"></i> <small>3 days ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 order-md-2 order-1 p-0">
+                                <img src="img/blog2.jpg" class="img-fluid h-100 w-100 object-fit-cover hover-zoom"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="card border-1 border-primary overflow-hidden shadow transition-all hover-scale">
+                        <div class="row align-items-stretch">
+                            <div class="col-lg-4 col-md-6 p-0">
+                                <img src="img/blog3.jpg" class="img-fluid h-100 w-100 object-fit-cover hover-zoom"
+                                    alt="...">
+                            </div>
+                            <div class="col-lg-8 col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title my-3 hover-text-primary">"Seasonal Sips: What's New on the
+                                        Menu
+                                        This Month"</h5>
+                                    <p class="lh-base">
+                                        As the seasons change, so do the flavors at our café. This month, we're
+                                        introducing a delightful array of seasonal beverages designed to warm your heart
+                                        and awaken your taste buds. Enjoy the rich, velvety notes of our Pumpkin Spice
+                                        Latte, topped with spiced whipped cream and a dash of cinnamon — perfect for
+                                        cozy afternoons.Craving something cool and crisp? Try our Iced Apple Chai,
+                                        blending crisp apple undertones with warm chai spices, ideal for transitional
+                                        weather........
+                                    </p>
+                                    <a href="#" class="text-decoration-none text-light-emphasis hover-text-primary">Read
+                                        More<i class="ri-arrow-right-line"></i></a>
+                                    <div class="my-3 text-body-secondary">
+                                        <i class="ri-calendar-line"></i> <small>December 13, 2025</small>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12">
-                <div class="card border-1 border-primary overflow-hidden mb-5 shadow transition-all hover-scale">
-                    <div class="row align-items-stretch">
-                        <div class="col-lg-8 col-md-6 order-md-1 order-2">
-                            <div class="card-body">
-                                <h5 class="card-title my-3 hover-text-primary">"5 Reasons Our Café Is Your Next Favorite
-                                    Hangout Spot"
-                                </h5>
-                                <p>Looking for a cozy spot to unwind, read, or work? Here's why people keep coming
-                                    back:</p>
-                                <ul class="text-light-emphasis">
-                                    <li class="mb-1">Comfortable, stylish seating that creates the perfect
-                                        environment for relaxation, conversation, or quiet time alone.</li>
-                                    <li class="mb-1">Warm, welcoming staff Read why regulars call us their "second
-                                        home."</li>
-                                    <li class="mb-1">Handcrafted coffee and local pastries</li>
-                                    <li class="mb-1">Free high-speed Wi-Fi to keep you connected, whether you're
-                                        working remotely or catching up online.</li>
-                                    <li class="mb-1">Soothing music and cozy lighting</li>
-                                </ul>
-                                <a href="#" class="text-decoration-none text-light-emphasis hover-text-primary">Read
-                                    More<i class="ri-arrow-right-line"></i></a>
-                                <div class="my-3 text-body-secondary">
-                                    <i class="ri-calendar-line"></i> <small>3 days ago</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 order-md-2 order-1 p-0">
-                            <img src="img/blog2.jpg" class="img-fluid h-100 w-100 object-fit-cover hover-zoom"
-                                alt="...">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="card border-1 border-primary overflow-hidden shadow transition-all hover-scale">
-                    <div class="row align-items-stretch">
-                        <div class="col-lg-4 col-md-6 p-0">
-                            <img src="img/blog3.jpg" class="img-fluid h-100 w-100 object-fit-cover hover-zoom"
-                                alt="...">
-                        </div>
-                        <div class="col-lg-8 col-md-6">
-                            <div class="card-body">
-                                <h5 class="card-title my-3 hover-text-primary">"Seasonal Sips: What's New on the Menu
-                                    This Month"</h5>
-                                <p class="lh-base">
-                                    As the seasons change, so do the flavors at our café. This month, we're
-                                    introducing a delightful array of seasonal beverages designed to warm your heart
-                                    and awaken your taste buds. Enjoy the rich, velvety notes of our Pumpkin Spice
-                                    Latte, topped with spiced whipped cream and a dash of cinnamon — perfect for
-                                    cozy afternoons.Craving something cool and crisp? Try our Iced Apple Chai,
-                                    blending crisp apple undertones with warm chai spices, ideal for transitional
-                                    weather........
-                                </p>
-                                <a href="#" class="text-decoration-none text-light-emphasis hover-text-primary">Read
-                                    More<i class="ri-arrow-right-line"></i></a>
-                                <div class="my-3 text-body-secondary">
-                                    <i class="ri-calendar-line"></i> <small>December 13, 2025</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
 
@@ -975,7 +977,7 @@
                 <div class="col-12">
                     <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
                         <div class="footer-social-icon">
-                            <a href="#" class="text-primary footer-icon d-inline-block fs-4 me-3 hover-scale"><i
+                            <a href="#" class="text-primary footer-icon d-inline-block fs-4 me-3 hover-scale social-anim"><i
                                     class="ri-youtube-line"></i></a>
                             <a href="#" class="text-primary footer-icon d-inline-block fs-4 me-3 hover-scale"><i
                                     class="ri-google-line"></i></a>
@@ -1139,9 +1141,98 @@
     <script>
         AOS.init();
     </script>
-    <script src="script.js"></script>
+    <script>
+        // Nav active link
+        document.addEventListener("DOMContentLoaded", () => {
+            const navLinks = document.querySelectorAll("#navbarNav .nav-link");
+            const sections = Array.from(navLinks).map(link => {
+                const href = link.getAttribute("href");
+                const sectionId = href && href.startsWith("#") ? href.slice(1) : null;
+                return sectionId ? document.getElementById(sectionId) : null;
+            });
+            function setActiveLink() {
+                let scrollY = window.scrollY + 200;
+                navLinks.forEach(link => link.classList.remove("active"));
+                for (let i = sections.length - 1; i >= 0; i--) {
+                    const section = sections[i];
+                    if (section && scrollY >= section.offsetTop) {
+                        navLinks[i].classList.add("active");
+                        break;
+                    }
+                }
+            }
+            window.addEventListener("scroll", setActiveLink);
+            window.addEventListener("load", setActiveLink);
+        });
+
+        // Swiper setup for #catSlider, #testiSlider, #partnerSlider
+        document.addEventListener("DOMContentLoaded", function () {
+            if (document.querySelector("#catSlider"))
+                new Swiper("#catSlider", {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    loop: true,
+                    speed: 800,
+                    autoplay: { delay: 3000, disableOnInteraction: false },
+                    effect: 'coverflow',
+                    coverflowEffect: { rotate: 20, stretch: 0, depth: 300, modifier: 1, slideShadows: true },
+                    grabCursor: true,
+                    pagination: { el: ".swiper-pagination", clickable: true },
+                    navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+                    breakpoints: { 576: { slidesPerView: 2 }, 992: { slidesPerView: 3 } }
+                });
+
+            if (document.querySelector("#testiSlider"))
+                new Swiper("#testiSlider", {
+                    effect: 'coverflow', grabCursor: true, centeredSlides: true,
+                    slidesPerView: 3, spaceBetween: 30, loop: true, speed: 800,
+                    autoplay: { delay: 3000, disableOnInteraction: false },
+                    coverflowEffect: { rotate: 0, stretch: 0, depth: 200, modifier: 2, slideShadows: true },
+                    pagination: { el: ".swiper-pagination", clickable: true },
+                    navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+                    breakpoints: {
+                        0: { slidesPerView: 1 },
+                        768: { slidesPerView: 2 },
+                        992: { slidesPerView: 3 }
+                    }
+                });
+
+            if (document.querySelector("#partnerSlider"))
+                new Swiper("#partnerSlider", {
+                    slidesPerView: "auto",
+                    spaceBetween: 30,
+                    loop: true,
+                    speed: 4000,
+                    autoplay: { delay: 0, disableOnInteraction: false },
+                    allowTouchMove: false,
+                    breakpoints: { 0: { slidesPerView: 2 }, 768: { slidesPerView: 4 }, 992: { slidesPerView: 6 } }
+                });
+        });
+
+        // "Add to cart" counter
+        document.addEventListener("DOMContentLoaded", function () {
+            var addBtns = document.querySelectorAll(".add-icon");
+            var counters = document.querySelectorAll(".order-count");
+            var count = 0;
+            addBtns.forEach(btn => {
+                btn.style.cursor = "pointer";
+                btn.addEventListener("click", function () {
+                    count++;
+                    counters.forEach(counter => { counter.textContent = count + "+"; });
+                });
+            });
+        });
+
+        // Like toggle for testimonials
+        function toggleLike(el) {
+            const icon = el.querySelector('i');
+            const isActive = el.getAttribute('data-active') === 'true';
+            el.setAttribute('data-active', !isActive);
+            icon.classList.toggle('ri-heart-line', isActive);
+            icon.classList.toggle('ri-heart-fill', !isActive);
+        }
+    </script>
 
 </body>
-
 
 </html>

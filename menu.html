@@ -1,0 +1,935 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koffuu - Contact Us | Premium Coffee Shop & Café</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl navbar-light shadow-sm fixed-top">
+        <div class="container">
+            <a href="/" class="navbar-brand  align-items-center me-2">
+                <img src="img/logo-dark.png" alt="Logo" height="34" class="d-none d-md-block">
+                <img src="img/logo-sm.png" alt="Logo" height="34" class="d-md-none d-block">
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <div class="d-flex d-xl-none align-items-center">
+                <a href="cart.html" class="text-decoration-none position-relative me-4">
+                    <i class="ri-shopping-cart-2-line fs-4 text-dark"></i>
+                    <span
+                        class="position-absolute top-0 translate-middle mt-1 rounded-circle bg-danger text-white order-count">0+</span>
+                </a>
+                <button class="navbar-toggler p-1 fs-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="ri-menu-3-line fs-3"></i>
+                </button>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="collapse navbar-collapse navbar-custom" id="navbarAnimated">
+                <ul class="navbar-nav mx-auto" id="navbarNav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservation">Book a Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+
+                <div class="d-none d-xl-flex align-items-center ms-auto" id="navbarSupportedContent">
+                    <a href="./cart.html"
+                        class="text-decoration-none position-relative link-body-emphasis fw-semibold me-3">
+                        <i class="ri-shopping-cart-2-line fs-3"></i>
+                        <span
+                            class="position-absolute top-0 translate-middle mt-1 rounded-circle bg-danger text-white order-count">0+</span>
+                    </a>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalToggle">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero-section of categories-wise items -->
+    <section>
+        <div class="video-wrapper video-height position-relative overflow-hidden">
+            <video autoplay muted loop class="w-100 h-100 object-fit-cover z-0 position-relative">
+                <source src="./img/bg-video.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay position-absolute top-0 end-0 bottom-0 start-0 z-1"></div>
+            <div
+                class=" d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 z-2">
+                <div class="overlay-content text-center">
+                    <h1 class="section-title text-secondary mb-4 fs-70">Cupfuls of Comfort</h1>
+                    <p class="text-white mb-5 fs-20 fw-semibold">A curated collection of hot and cold delight</p>
+                    <div class="mb-5">
+                        <button type="button" class="btn btn-custom me-1">View more</button>
+                        <button type="button" class="btn btn-primary">Shop now</button>
+                    </div>
+                    <div class=" d-flex flex-sm-row flex-column justify-content-center align-items-center">
+                        <div class="user-avatars d-flex mb-sm-0 mb-3">
+                            <img src="img/user1.jpg" alt="" class="user-image">
+                            <img src="img/user2.jpg" alt="" class="user-image">
+                            <img src="img/user3.jpg" alt="" class="user-image">
+                            <div class="more user-image d-flex justify-content-center align-items-center fs-25">
+                                <i class="ri-add-line"></i>
+                            </div>
+                        </div>
+                        <div class="ms-2 text-white">
+                            <h5>+300K</h5>
+                            <p class="m-0 text-white">Trusted by over <strong>300,000</strong> users</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- beveragies-item-section  -->
+    <section class="item-section section-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-secondary fw-semibold text-center mb-4">Customize Your View</h1>
+                </div>
+            </div>
+            <form class="row justify-content-center align-items-center">
+                <div class="col-lg-10">
+                    <!-- Search + Sort -->
+                    <div class="input-group mb-4 position-relative">
+                        <div class="position-absolute top-50 start-0 translate-middle-y text-muted ms-3 search-icon">
+                            <i class="ri-search-2-line"></i>
+                        </div>
+                        <input type="text" class="form-control rounded-start-pill" placeholder="search" id="menuSearch"
+                            name="menuSearch">
+                        <button class="btn btn-primary rounded-end-pill dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Sort by</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sort by Name (A–Z)</a></li>
+                            <li><a class="dropdown-item" href="#">Price - Low to High</a></li>
+                            <li><a class="dropdown-item" href="#">Price - High to Low</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Category Filters -->
+                    <div
+                        class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center mb-4 gap-3">
+                        <div class="d-flex flex-column flex-sm-row gap-3">
+                            <select class="form-select" id="menuCategory" name="menuCategory">
+                                <option selected>Hot Beverages</option>
+                                <option>Cold Beverages</option>
+                                <option>Non-Caffeinated</option>
+                                <option>Specialty & Healthy</option>
+                                <option>Seasonal / Limited-Time</option>
+                            </select>
+                            <select class="form-select" id="menuCategoryStock" name="menuCategoryStock">
+                                <option selected>New Arrivals</option>
+                                <option>Best Seller</option>
+                                <option>On Sale</option>
+                            </select>
+                        </div>
+
+                        <!-- Filter Dropdowns -->
+                        <div class="d-flex flex-wrap gap-2 justify-content-center">
+                            <!-- Ingredients -->
+                            <div class="dropdown">
+                                <button class="btn btn-outline btn-sm dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">Ingredients</button>
+                                <ul class="dropdown-menu p-2">
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="menuContainsMilkCheck"
+                                            name="menuContainsMilkCheck" checked>
+                                        <label class="form-check-label" for="menuContainsMilkCheck">Contains
+                                            Milk</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="menuContainsNutsCheck"
+                                            name="menuContainsNutsCheck">
+                                        <label class="form-check-label" for="menuContainsNutsCheck">Contains
+                                            Nuts</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="menuContainsCaffeineCheck"
+                                            name="menuContainsCaffeineCheck">
+                                        <label class="form-check-label" for="menuContainsCaffeineCheck">Contains
+                                            Caffeine</label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Availability -->
+                            <div class="dropdown">
+                                <button class="btn btn-outline btn-sm dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">Availability</button>
+                                <ul class="dropdown-menu p-2">
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="menuAvailableNowCheck"
+                                            name="menuAvailableNowCheck" checked>
+                                        <label class="form-check-label" for="menuAvailableNowCheck">Available
+                                            Now</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="menuSeasonalCheck"
+                                            name="menuSeasonalCheck">
+                                        <label class="form-check-label" for="menuSeasonalCheck">Seasonal</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="menuOutofStockCheck"
+                                            name="menuOutofStockCheck">
+                                        <label class="form-check-label" for="menuOutofStockCheck">Out of Stock</label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Preferences -->
+                            <div class="dropdown">
+                                <button class="btn btn-outline btn-sm dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">Preferences</button>
+                                <ul class="dropdown-menu p-2">
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="menuVegetarianCheck"
+                                            name="menuVegetarianCheck" checked>
+                                        <label class="form-check-label" for="menuVegetarianCheck">Vegetarian</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="menuVeganCheck"
+                                            name="menuVeganCheck">
+                                        <label class="form-check-label" for="menuVeganCheck">Vegan</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="menuGlutenFreeCheck"
+                                            name="menuGlutenFreeCheck">
+                                        <label class="form-check-label" for="menuGlutenFreeCheck">Gluten-Free</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="menuSugarFreeCheck"
+                                            name="menuSugarFreeCheck">
+                                        <label class="form-check-label" for="menuSugarFreeCheck">Sugar-Free</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="menuNutFreeCheck"
+                                            name="menuNutFreeCheck">
+                                        <label class="form-check-label" for="menuNutFreeCheck">Nut-Free</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row mt-5 justify-content-center">
+                <div class="col-12">
+                    <h2 class="fw-bold text-gradiant text-center my-5">Sips You'll Love</h2>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-10 mb-3">
+                    <div
+                        class="card item-card overflow-hidden shadow-sm border-0 rounded-4 mb-lg-0 mb-3 hover-shadow transition-all">
+
+                        <!-- Image Top -->
+                        <div class="position-relative">
+                            <img src="img/img-1.jpg" class="img-fluid card-img-top rounded-top-4" alt="...">
+
+                            <!-- Add Icon -->
+                            <div
+                                class="add-icon text-decoration-none text-white position-absolute end-0 bottom-0 lh-1 z-2 bg-dark bg-opacity-50 rounded-circle p-1 me-2 mb-2">
+                                <i class="ri-add-circle-fill fs-3"></i>
+                            </div>
+
+                            <!-- Like Icons -->
+                            <div class="like-icon" tabindex="0">
+                                <div
+                                    class="like-icon-1 text-white position-absolute z-1 top-0 end-0 fs-4 me-2 mt-2 bg-dark bg-opacity-50 rounded-circle p-1">
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div
+                                    class="like-icon-2 text-danger position-absolute z-2 top-0 end-0 fs-4 me-2 mt-2 bg-white bg-opacity-75 rounded-circle p-1">
+                                    <i class="ri-heart-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Body: Only Text & Buttons -->
+                        <div class="card-body p-3">
+                            <h5 class="card-title fw-semibold text-dark">Classic Espresso</h5>
+                            <p class="small text-muted mb-1">Hot Beverages</p>
+                            <p class="card-text text-secondary small">Bold and intense shot brewed from freshly ground
+                                beans.</p>
+
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <h4 class="card-amount m-0 text-primary fw-bold">$30</h4>
+                                <a href="./cart.html" class="btn btn-sm rounded-pill btn-primary px-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-10 mb-3">
+                    <div class="card item-card overflow-hidden shadow-sm border-0 rounded-4 mb-lg-0 mb-3">
+
+                        <!-- Image Top with Icons -->
+                        <div class="position-relative">
+                            <img src="img/img-2.jpg" class="img-fluid card-img-top rounded-top-4" alt="...">
+
+                            <!-- Add Icon -->
+                            <div
+                                class="add-icon text-decoration-none text-white position-absolute end-0 bottom-0 lh-1 z-2 bg-dark bg-opacity-50 rounded-circle p-1 me-2 mb-2">
+                                <i class="ri-add-circle-fill fs-3"></i>
+                            </div>
+
+                            <!-- Like Icons -->
+                            <div class="like-icon" tabindex="0">
+                                <div
+                                    class="like-icon-1 text-white position-absolute z-1 top-0 end-0 fs-4 me-2 mt-2 bg-dark bg-opacity-50 rounded-circle p-1">
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div
+                                    class="like-icon-2 text-danger position-absolute z-2 top-0 end-0 fs-4 me-2 mt-2 bg-white bg-opacity-75 rounded-circle p-1">
+                                    <i class="ri-heart-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Body (Details Only) -->
+                        <div class="card-body p-3">
+                            <h5 class="card-title fw-semibold text-dark">Cappuccino</h5>
+                            <p class="small text-muted mb-1">Hot Beverages</p>
+                            <p class="card-text text-secondary small">Equal parts espresso, steamed milk, and milk foam.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <h4 class="card-amount m-0 text-primary fw-bold">$50</h4>
+                                <a href="./cart.html" class="btn btn-sm  rounded-pill btn-primary px-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Iced Vanilla Cold Brew -->
+                <div class="col-lg-3 col-sm-6 col-10 mb-3">
+                    <div class="card item-card overflow-hidden shadow-sm border-0 rounded-4 mb-lg-0 mb-3">
+                        <div class="position-relative">
+                            <img src="img/img-3.jpg" class="img-fluid card-img-top rounded-top-4" alt="...">
+                            <div
+                                class="add-icon text-white position-absolute end-0 bottom-0 lh-1 z-2 bg-dark bg-opacity-50 rounded-circle p-1 me-2 mb-2">
+                                <i class="ri-add-circle-fill fs-3"></i>
+                            </div>
+                            <div class="like-icon" tabindex="0">
+                                <div
+                                    class="like-icon-1 text-white position-absolute z-1 top-0 end-0 fs-4 me-2 mt-2 bg-dark bg-opacity-50 rounded-circle p-1">
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div
+                                    class="like-icon-2 text-danger position-absolute z-2 top-0 end-0 fs-4 me-2 mt-2 bg-white bg-opacity-75 rounded-circle p-1">
+                                    <i class="ri-heart-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <h5 class="card-title fw-semibold text-dark">Iced Vanilla Cold Brew</h5>
+                            <p class="small text-muted mb-1">Cold Beverages</p>
+                            <p class="card-text text-secondary small">Slow-steeped coffee served chilled with a splash
+                                of vanilla.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <h4 class="card-amount m-0 text-primary fw-bold">$65</h4>
+                                <a href="./cart.html" class="btn btn-sm  rounded-pill btn-primary px-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nitro Cold Brew -->
+                <div class="col-lg-3 col-sm-6 col-10 mb-3">
+                    <div class="card item-card overflow-hidden shadow-sm border-0 rounded-4 mb-lg-0 mb-3">
+                        <div class="position-relative">
+                            <img src="img/img-4.jpg" class="img-fluid card-img-top rounded-top-4" alt="...">
+                            <div
+                                class="add-icon text-white position-absolute end-0 bottom-0 lh-1 z-2 bg-dark bg-opacity-50 rounded-circle p-1 me-2 mb-2">
+                                <i class="ri-add-circle-fill fs-3"></i>
+                            </div>
+                            <div class="like-icon" tabindex="0">
+                                <div
+                                    class="like-icon-1 text-white position-absolute z-1 top-0 end-0 fs-4 me-2 mt-2 bg-dark bg-opacity-50 rounded-circle p-1">
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div
+                                    class="like-icon-2 text-danger position-absolute z-2 top-0 end-0 fs-4 me-2 mt-2 bg-white bg-opacity-75 rounded-circle p-1">
+                                    <i class="ri-heart-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <h5 class="card-title fw-semibold text-dark">Nitro Cold Brew</h5>
+                            <p class="small text-muted mb-1">Cold Beverages</p>
+                            <p class="card-text text-secondary small">Cold brew infused with nitrogen for a creamy
+                                texture.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <h4 class="card-amount m-0 text-primary fw-bold">$45</h4>
+                                <a href="./cart.html" class="btn btn-sm rounded-pill btn-primary px-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Herbal Chai Latte -->
+                <div class="col-lg-3 col-sm-6 col-10 mb-3">
+                    <div class="card item-card overflow-hidden shadow-sm border-0 rounded-4 mb-lg-0 mb-3">
+                        <div class="position-relative">
+                            <img src="img/img-5.jpg" class="img-fluid card-img-top rounded-top-4" alt="...">
+                            <div
+                                class="add-icon text-white position-absolute end-0 bottom-0 lh-1 z-2 bg-dark bg-opacity-50 rounded-circle p-1 me-2 mb-2">
+                                <i class="ri-add-circle-fill fs-3"></i>
+                            </div>
+                            <div class="like-icon" tabindex="0">
+                                <div
+                                    class="like-icon-1 text-white position-absolute z-1 top-0 end-0 fs-4 me-2 mt-2 bg-dark bg-opacity-50 rounded-circle p-1">
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div
+                                    class="like-icon-2 text-danger position-absolute z-2 top-0 end-0 fs-4 me-2 mt-2 bg-white bg-opacity-75 rounded-circle p-1">
+                                    <i class="ri-heart-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <h5 class="card-title fw-semibold text-dark">Herbal Chai Latte</h5>
+                            <p class="small text-muted mb-1">Non-Caffeinated</p>
+                            <p class="card-text text-secondary small">A cozy blend of spiced herbs and steamed milk.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <h4 class="card-amount m-0 text-primary fw-bold">$40</h4>
+                                <a href="./cart.html" class="btn btn-sm rounded-pill btn-primary px-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6  col-10 mb-3">
+                    <div class="card item-card overflow-hidden shadow-sm border-0 rounded-4 mb-lg-0 mb-3">
+                        <div class="card-img position-relative">
+                            <img src="img/img-6.jpg" class="img-fluid card-img-top rounded-top-4" alt="...">
+                            <div
+                                class="add-icon text-white position-absolute end-0 bottom-0 lh-1 z-2 bg-dark bg-opacity-50 rounded-circle p-1 me-2 mb-2">
+                                <i class="ri-add-circle-fill fs-3"></i>
+                            </div>
+                            <div class="like-icon" tabindex="0">
+                                <div
+                                    class="like-icon-1 text-white position-absolute z-1 top-0 end-0 fs-4 me-2 mt-2 bg-dark bg-opacity-50 rounded-circle p-1">
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div
+                                    class="like-icon-2 text-danger position-absolute z-2 top-0 end-0 fs-4 me-2 mt-2 bg-white bg-opacity-75 rounded-circle p-1">
+                                    <i class="ri-heart-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <h5 class="card-title fw-semibold text-dark ">Hot Chocolate</h5>
+                            <p class="small text-muted mb-1">Non-Caffeinated</p>
+                            <p class="card-text text-secondary small">Rich cocoa and steamed milk, a classic favorite.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <h4 class="card-amount m-0 text-primary fw-bold">$70</h4>
+                                <a href="./cart.html" class="btn btn-sm rounded-pill btn-primary px-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-10 mb-3">
+                    <div class="card item-card overflow-hidden shadow-sm border-0 rounded-4 mb-lg-0 mb-3">
+                        <div class="position-relative">
+                            <img src="img/img-7.jpg" class="img-fluid card-img-top rounded-top-4" alt="...">
+                            <div
+                                class="add-icon text-white position-absolute end-0 bottom-0 lh-1 z-2 bg-dark bg-opacity-50 rounded-circle p-1 me-2 mb-2">
+                                <i class="ri-add-circle-fill fs-3"></i>
+                            </div>
+                            <div class="like-icon" tabindex="0">
+                                <div
+                                    class="like-icon-1 text-white position-absolute z-1 top-0 end-0 fs-4 me-2 mt-2 bg-dark bg-opacity-50 rounded-circle p-1">
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div
+                                    class="like-icon-2 text-danger position-absolute z-2 top-0 end-0 fs-4 me-2 mt-2 bg-white bg-opacity-75 rounded-circle p-1">
+                                    <i class="ri-heart-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <h5 class="card-title fw-semibold text-dark">Protein Mocha</h5>
+                            <p class="small text-muted mb-1">Specialty & Healthy</p>
+                            <p class="card-text text-secondary small">Mocha fortified with a shot of protein.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <h4 class="card-amount m-0 text-primary fw-bold">$75</h4>
+                                <a href="./cart.html" class="btn btn-sm rounded-pill btn-primary px-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-10 mb-3">
+                    <div class="card item-card overflow-hidden shadow-sm border-0 rounded-4 mb-lg-0 mb-3">
+                        <div class="position-relative">
+                            <img src="img/img-8.jpg" class="img-fluid card-img-top rounded-top-4" alt="Adaptogen Latte">
+                            <div
+                                class="add-icon text-white position-absolute end-0 bottom-0 lh-1 z-2 bg-dark bg-opacity-50 rounded-circle p-1 me-2 mb-2">
+                                <i class="ri-add-circle-fill fs-3"></i>
+                            </div>
+                            <div class="like-icon" tabindex="0">
+                                <div
+                                    class="like-icon-1 text-white position-absolute z-1 top-0 end-0 fs-4 me-2 mt-2 bg-dark bg-opacity-50 rounded-circle p-1">
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div
+                                    class="like-icon-2 text-danger position-absolute z-2 top-0 end-0 fs-4 me-2 mt-2 bg-white bg-opacity-75 rounded-circle p-1">
+                                    <i class="ri-heart-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <h5 class="card-title fw-semibold text-dark">Adaptogen Latte</h5>
+                            <p class="small text-muted mb-1">Specialty & Healthy</p>
+                            <p class="card-text text-secondary small">Espresso with herbs like ashwagandha for stress
+                                relief.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <h4 class="card-amount m-0 text-primary fw-bold">$55</h4>
+                                <a href="./cart.html" class="btn btn-sm rounded-pill btn-primary px-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maple Cinnamon Latte -->
+                <div class="col-lg-3 col-sm-6 col-10 mb-3">
+                    <div class="card item-card overflow-hidden shadow-sm border-0 rounded-4 mb-lg-0 mb-3">
+                        <div class="position-relative">
+                            <img src="img/img-9.jpg" class="img-fluid card-img-top rounded-top-4"
+                                alt="Maple Cinnamon Latte">
+                            <div
+                                class="add-icon text-white position-absolute end-0 bottom-0 lh-1 z-2 bg-dark bg-opacity-50 rounded-circle p-1 me-2 mb-2">
+                                <i class="ri-add-circle-fill fs-3"></i>
+                            </div>
+                            <div class="like-icon" tabindex="0">
+                                <div
+                                    class="like-icon-1 text-white position-absolute z-1 top-0 end-0 fs-4 me-2 mt-2 bg-dark bg-opacity-50 rounded-circle p-1">
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div
+                                    class="like-icon-2 text-danger position-absolute z-2 top-0 end-0 fs-4 me-2 mt-2 bg-white bg-opacity-75 rounded-circle p-1">
+                                    <i class="ri-heart-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <h5 class="card-title fw-semibold text-dark">Maple Cinnamon Latte</h5>
+                            <p class="small text-muted mb-1">Seasonal Beverages</p>
+                            <p class="card-text text-secondary small">Warm maple syrup and cinnamon with espresso.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <h4 class="card-amount m-0 text-primary fw-bold">$100</h4>
+                                <a href="./cart.html" class="btn btn-sm rounded-pill btn-primary px-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Honey Lavender Coffee -->
+                <div class="col-lg-3 col-sm-6 col-10 mb-3">
+                    <div class="card item-card overflow-hidden  shadow-sm border-0 rounded-4 mb-lg-0 mb-3">
+                        <div class="position-relative">
+                            <img src="img/img-10.jpg" class="img-fluid card-img-top rounded-top-4"
+                                alt="Honey Lavender Coffee">
+                            <div
+                                class="add-icon text-white position-absolute end-0 bottom-0 lh-1 z-2 bg-dark bg-opacity-50 rounded-circle p-1 me-2 mb-2">
+                                <i class="ri-add-circle-fill fs-3"></i>
+                            </div>
+                            <div class="like-icon" tabindex="0">
+                                <div
+                                    class="like-icon-1 text-white position-absolute z-1 top-0 end-0 fs-4 me-2 mt-2 bg-dark bg-opacity-50 rounded-circle p-1">
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div
+                                    class="like-icon-2 text-danger position-absolute z-2 top-0 end-0 fs-4 me-2 mt-2 bg-white bg-opacity-75 rounded-circle p-1">
+                                    <i class="ri-heart-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <h5 class="card-title fw-semibold text-dark">Honey Lavender Coffee</h5>
+                            <p class="small text-muted mb-1">Seasonal Beverages</p>
+                            <p class="card-text text-secondary small">Espresso with herbs like ashwagandha for stress
+                                relief.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <h4 class="card-amount m-0 text-primary fw-bold">$80</h4>
+                                <a href="./cart.html" class="btn btn-sm rounded-pill btn-primary px-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mocha Delight -->
+                <div class="col-lg-3 col-sm-6 col-10 mb-3">
+                    <div class="card item-card overflow-hidden shadow-sm border-0 rounded-4 mb-lg-0 mb-3">
+                        <div class="position-relative">
+                            <img src="img/img-11.jpg" class="img-fluid card-img-top rounded-top-4" alt="Mocha Delight">
+                            <div
+                                class="add-icon text-white position-absolute end-0 bottom-0 lh-1 z-2 bg-dark bg-opacity-50 rounded-circle p-1 me-2 mb-2">
+                                <i class="ri-add-circle-fill fs-3"></i>
+                            </div>
+                            <div class="like-icon" tabindex="0">
+                                <div
+                                    class="like-icon-1 text-white position-absolute z-1 top-0 end-0 fs-4 me-2 mt-2 bg-dark bg-opacity-50 rounded-circle p-1">
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div
+                                    class="like-icon-2 text-danger position-absolute z-2 top-0 end-0 fs-4 me-2 mt-2 bg-white bg-opacity-75 rounded-circle p-1">
+                                    <i class="ri-heart-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <h5 class="card-title fw-semibold text-dark">Mocha Delight</h5>
+                            <p class="small text-muted mb-1">Seasonal Beverages</p>
+                            <p class="card-text text-secondary small">Rich espresso and chocolate with creamy milk foam.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <h4 class="card-amount m-0 text-primary fw-bold">$100</h4>
+                                <a href="./cart.html" class="btn btn-sm rounded-pill btn-primary px-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Americano -->
+                <div class="col-lg-3 col-sm-6 col-10 mb-3">
+                    <div class="card item-card overflow-hidden shadow-sm border-0 rounded-4 mb-lg-0 mb-3">
+                        <div class="position-relative">
+                            <img src="img/img-12.jpg" class="img-fluid card-img-top rounded-top-4" alt="Americano">
+                            <div
+                                class="add-icon text-white position-absolute end-0 bottom-0 lh-1 z-2 bg-dark bg-opacity-50 rounded-circle p-1 me-2 mb-2">
+                                <i class="ri-add-circle-fill fs-3"></i>
+                            </div>
+                            <div class="like-icon" tabindex="0">
+                                <div
+                                    class="like-icon-1 text-white position-absolute z-1 top-0 end-0 fs-4 me-2 mt-2 bg-dark bg-opacity-50 rounded-circle p-1">
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div
+                                    class="like-icon-2 text-danger position-absolute z-2 top-0 end-0 fs-4 me-2 mt-2 bg-white bg-opacity-75 rounded-circle p-1">
+                                    <i class="ri-heart-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <h5 class="card-title fw-semibold text-dark">Americano</h5>
+                            <p class="small text-muted mb-1">Hot Beverages</p>
+                            <p class="card-text text-secondary small">Espresso diluted with hot water for a smooth
+                                finish.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <h4 class="card-amount m-0 text-primary fw-bold">$65</h4>
+                                <a href="./cart.html" class="btn btn-sm rounded-pill btn-primary px-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="d-sm-flex flex-sm-row flex-column justify-content-sm-between align-items-sm-center mt-sm-5 mt-3">
+                <p class="text-danger-emphasis text-sm-start text-center mb-sm-0 mb-3 small m-0">Showing
+                    <span class="fw-bold">1</span> to <span class="fw-bold">3</span> of <span class="fw-bold">20</span>
+                    Entries
+                </p>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center m-0">
+                        <li class="page-item mx-3">
+                            <a class="page-link page-move-icon bg-transparent text-danger-emphasis fs-4 pt-0 shadow-none"
+                                href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item mx-1"><a class="page-link rounded-1 shadow-none py-2 px-3" href="#">1</a>
+                        </li>
+                        <li class="page-item mx-1"><a class="page-link rounded-1 shadow-none py-2 px-3" href="#">2</a>
+                        </li>
+                        <li class="page-item mx-1"><a class="page-link rounded-1 shadow-none py-2 px-3" href="#">3</a>
+                        </li>
+                        <li class="page-item mx-3">
+                            <a class="page-link page-move-icon bg-transparent text-danger-emphasis fs-4 pt-0 shadow-none"
+                                href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer-section -->
+    <footer class="section-sm pb-3 section-bg-light border-top">
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <div class="col-lg-10 col-12 mb-4">
+                    <a class="d-flex justify-content-center align-items-center gap-3 text-decoration-none" href="#">
+                        <img src="./img/logo-dark.png" alt="Logo" height="42" class="">
+                    </a>
+                    <p class="text-muted fst-italic mt-2 fs-6">A Café Experience Designed to Awaken Your Senses</p>
+
+                    <div class="text-center">
+                        <ul
+                            class="list-group list-group-horizontal flex-wrap gap-5 justify-content-center align-items-center border-0">
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="./index.html">Home</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">About Us</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">Categories</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">Gallery</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">Blog</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="#">Book a Table</a>
+                            </li>
+                            <li class="item-list list-unstyled">
+                                <a class="footer-nav-link text-decoration-none d-inline-block text-primary fw-semibold"
+                                    href="./contect.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row text-md-start text-center gy-4">
+                <div class="col-md-4 col-12">
+                    <h5 class="fw-semibold mb-3 text-primary">Address</h5>
+                    <p class="m-0 text-muted">82, Rosewood Avenue Willow Creek, United States CA 90231</p>
+                </div>
+                <div class="col-md-4 col-12">
+                    <h5 class="fw-semibold mb-3 text-primary">CONTACT US</h5>
+                    <ul class="list-unstyled text-muted fs-6">
+                        <li class="item-list mb-2">
+                            <span class="sub-info"><i class="ri-phone-line me-2 text-primary"></i>+1 123 456 7890</span>
+                        </li>
+                        <li class="item-list">
+                            <span class="sub-info text-break"><i class="ri-mail-line me-2 text-primary"></i>café<a>@gmail.com</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                    <h5 class="fw-semibold mb-3 text-primary">Our Newsletter</h5>
+                    <p class="text-muted">Join our newsletter to receive exclusive updates and news!</p>
+                    <form>
+                        <div
+                            class="d-flex flex-column flex-sm-row gap-2 justify-content-center justify-content-md-start">
+                            <input type="email" class="form-control form-control-sm" placeholder="Enter Your Email"
+                                id="footerNewsLetter" name="footerNewsLetter" required>
+                            <button type="submit" class="btn btn-primary btn-sm rounded-pill px-4">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                        <div class="footer-social-icon">
+                            <a href="#" class="text-primary footer-icon d-inline-block fs-4 me-3 hover-scale"><i
+                                    class="ri-youtube-line"></i></a>
+                            <a href="#" class="text-primary footer-icon d-inline-block fs-4 me-3 hover-scale"><i
+                                    class="ri-google-line"></i></a>
+                            <a href="#" class="text-primary footer-icon d-inline-block fs-4 me-3 hover-scale"><i
+                                    class="ri-facebook-box-line"></i></a>
+                            <a href="#" class="text-primary fs-4 hover-scale"><i class="ri-instagram-line"></i></a>
+                        </div>
+                        <ul class="d-flex list-unstyled mb-0 gap-4">
+                            <li class="item-list">
+                                <a class="text-decoration-none text-primary fw-semibold" href="#">Privacy Policy</a>
+                            </li>
+                            <li class="item-list">
+                                <a class="text-decoration-none text-primary fw-semibold" href="#">Terms of Use</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-dark text-center small fw-medium mb-0">&copy;
+                        <script data-cfasync="false"
+                            src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                        <script>document.write(new Date().getFullYear());</script> Koffuu - Mantraksh Devs. All rights
+                        reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sign in modal -->
+    <section class="auth-section">
+        <div class="modal fade" id="exampleModalToggle" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content overflow-hidden position-relative">
+                    <div class="modal-body auth-img p-0">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-6 col-12 section-bg-light">
+                                <div class="modal-form">
+                                    <h1 class="text-center fw-bold text-primary">Sign Up</h1>
+                                    <p class="text-center text-muted mb-4">Create your new account</p>
+                                    <button type="button" class="btn btn-close top-0 end-0 position-absolute mt-2"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <form>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="Full Name"
+                                                id="signUpName" name="signUpName">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" placeholder="Email Address"
+                                                id="signUpEmail" name="signUpEmail" autocomplete="username">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="password" id="signUpPassword" name="signUpPassword"
+                                                class="form-control" placeholder="Password"
+                                                autocomplete="current-password">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="password" id="signUpConfirmPassword"
+                                                name="signUpConfirmPassword" class="form-control mb-2"
+                                                placeholder="Confirm Password" autocomplete="current-password">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="checkbox" class="form-check-input" id="signUpRemember"
+                                                name="signUpRemember">
+                                            <label class="form-check-label" for="signUpRemember"> Remember Me</label>
+                                        </div>
+                                        <div class="text-center">
+                                            <a href="index.html" class="btn btn-primary rounded-5 w-100">Register</a>
+                                        </div>
+                                        <div class="my-4">
+                                            <h6
+                                                class="underline-after text-center text-muted mb-0 position-relative z-0">
+                                                <span class="position-relative z-1 section-bg-light px-2">or continue
+                                                    with</span>
+                                            </h6>
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="d-flex justify-content-evenly">
+                                                <div class="auth-icon-wrapper"><i
+                                                        class="ri-facebook-circle-fill fs-2"></i></div>
+                                                <div class="auth-icon-wrapper"><i class="ri-google-fill fs-2"></i></div>
+                                                <div class="auth-icon-wrapper"><i class="ri-apple-fill fs-2"></i></div>
+                                            </div>
+                                        </div>
+                                        <p class="form-text text-center">Already have an account? <a href="./login.html"
+                                                class="fw-bold text-danger-emphasis" data-bs-target="#loginModal"
+                                                data-bs-toggle="modal">Log In</a> </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content overflow-hidden position-relative">
+                    <div class="modal-body auth-img p-0">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-6 col-12 section-bg-light">
+                                <div class="modal-form auth-form">
+                                    <h1 class="text-primary text-center fw-bold ">Login</h1>
+                                    <p class="text-center text-muted mb-4">Login to your account</p>
+                                    <button type="button" class="btn btn-close top-0 end-0 mt-2 position-absolute"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <form class="row">
+                                        <div class="col-12 mb-3">
+                                            <input type="email" class="form-control" placeholder="Email Address"
+                                                id="loginEmail" name="loginEmail" autocomplete="username">
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <input type="password" id="loginPassword" name="loginPassword"
+                                                class="form-control mb-2" placeholder="Password"
+                                                autocomplete="current-password">
+                                            <a href="#"
+                                                class="text-decoration-none fw-semibold text-danger-emphasis">Forget
+                                                Password?</a>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <a href="index.html" class="btn btn-primary rounded-5 w-100">Login</a>
+                                        </div>
+                                        <div class="col-12 my-4">
+                                            <h6
+                                                class="underline-after text-center text-muted mb-0 position-relative z-0">
+                                                <span class="position-relative z-1 section-bg-light px-2">or continue
+                                                    with</span>
+                                            </h6>
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-evenly mb-4">
+                                            <div class="auth-icon-wrapper"><i class="ri-facebook-circle-fill fs-2"></i>
+                                            </div>
+                                            <div class="auth-icon-wrapper"><i class="ri-google-fill fs-2"></i></div>
+                                            <div class="auth-icon-wrapper"><i class="ri-apple-fill fs-2"></i></div>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="form-text text-center">Don't haccount?
+                                                <a href="login.html" class="fw-bold  text-danger-emphasis"
+                                                    data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Create
+                                                    Account</a>
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="./js/scroll-trigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
